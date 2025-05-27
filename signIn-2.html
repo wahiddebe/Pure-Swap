@@ -29,7 +29,9 @@
                     <h2>Sign in to your account</h2>
                 </div>
                 <div class="w-100">
-                    <form class="d-flex flex-column"><label class="form-label align-self-start fs-7 text-sub-500">Password</label><input class="form-control mb-3" type="text" placeholder="Password"><a class="fs-5 text-decoration-none align-self-end fs-7 mb-2 fw-medium" href="#">Forgot Password</a><button class="btn btn-primary mt-4" type="button">Continue</button></form>
+                    <form class="d-flex flex-column"><label class="form-label align-self-start fs-7 text-sub-500">Password</label>
+                        <div class="input-group"><input class="form-control" type="password" id="password-input"><span class="bg-white input-group-text" id="eye-span" onclick="typeChanger()"><img id="eye-off" src="assets/img/eye-off.svg"><img class="d-none" id="eye" src="assets/img/eye.svg" style="width: 20px;height: 20px;"></span></div><a class="fs-5 text-decoration-none align-self-end fs-7 mb-2 fw-medium" href="#">Forgot Password</a><button class="btn btn-primary mt-4" type="button">Continue</button>
+                    </form>
                 </div>
             </div>
             <div class="d-none d-lg-flex flex-column p-4_5 col-6" style="background: url(&quot;assets/img/Frame%201000006151.png&quot;) bottom / contain no-repeat, #16336b;">
@@ -65,6 +67,7 @@
     </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
