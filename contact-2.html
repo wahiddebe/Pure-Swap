@@ -31,7 +31,29 @@
             </div>
         </div>
     </nav>
-    <section class="min-vh-100 p-4 p-lg-7"></section>
+    <section class="min-vh-100 px-4 px-lg-7 py-4 bg-weak">
+        <div class="bg-white p-4 rounded-5">
+            <form class="d-flex flex-column gap-4">
+                <h4>Contact Us</h4>
+                <div>
+                    <div class="d-flex flex-column flex-lg-row gap-4">
+                        <div class="col-lg-6"><label class="form-label fs-7 text-sub-500">Name</label>
+                            <div class="d-flex align-items-center gap-3"><input class="form-control" type="text" id="name-generate-input" placeholder="Enter your name"><button class="btn btn-primary" type="button" onclick="generateName()">Generate</button></div>
+                        </div>
+                        <div class="col-lg-6"><label class="form-label fs-7 text-sub-500">Order ID</label><input class="form-control" type="text" placeholder="Enter order ID you need help with"></div>
+                    </div>
+                </div>
+                <div>
+                    <div><label class="form-label fs-7 text-sub-500">Subject</label><select class="form-select" placeholder="Choose a subject for your request">
+                            <option value="0" selected="">Choose a subject for your request</option>
+                        </select></div>
+                </div>
+                <div>
+                    <div><label class="form-label fs-7 text-sub-500">Your Message</label><textarea class="form-control" placeholder="Enter your message" rows="5"></textarea></div>
+                </div><button class="btn btn-primary" type="button">Create Ticket</button>
+            </form>
+        </div>
+    </section>
     <footer class="d-flex flex-column p-4 p-lg-7 gap-4 gap-lg-7 footer-swap">
         <div>
             <div class="row gy-3 gy-lg-0">
