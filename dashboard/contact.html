@@ -18,20 +18,46 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body d-flex py-3 px-4 px-lg-8">
+    <nav class="navbar navbar-expand-lg bg-body d-flex py-3 px-4 px-lg-2 px-xl-6">
         <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="order-lg-last">
+            <div class="d-flex justify-content-between align-items-center order-lg-last gap-4">
+                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/settings.svg"></a></div>
+                <div class="d-none d-lg-flex align-items-center bg-weak rounded-3 p-2 gap-3">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div class="cashback-notif">
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
+                <div class="devider-nav"></div>
                 <div class="dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span>Jonas Key</span></a>
-                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                    <div class="dropdown-menu dropdown-menu-end p-4 gap-4">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="d-flex align-items-stretch gap-2"><img src="../assets/img/dashboard/jonas.svg">
+                                <div class="d-flex flex-column justify-content-between"><span class="fs-7 fw-medium text-heading">Jonas Khanwald</span><span class="fs-8 text-heading">@jonaskhanwald_</span></div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center badge-nav-profile gap-2"><img src="../assets/img/dashboard/blue-orange-object-with-star-it%201.svg"><span>Starter</span></div>
+                        </div>
+                        <div class="w-100 border border-bottom-1 border-soft-200 mb-4"></div>
+                        <div class="text-decoration-none d-flex flex-column gap-3 mb-4"><a class="text-decoration-none text-heading fw-medium" href="#">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="#">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="#">Referral</a><a class="text-decoration-none text-heading fw-medium" href="#">History</a><a class="text-decoration-none text-heading fw-medium" href="#">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="#">Support</a><a class="text-decoration-none text-heading fw-medium" href="#">Settings</a></div>
+                        <div class="w-100 border border-bottom-1 border-soft-200 mb-4"></div><a class="text-decoration-none text-danger fw-medium" href="#"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
+                    </div>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
+                <div class="d-flex d-lg-none align-items-center bg-weak rounded-3 p-2 gap-3 mt-4">
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
+                    <div class="devider-nav"></div>
+                    <div>
+                        <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
+                    </div>
+                </div>
                 <ul class="navbar-nav gap-3 gap-lg-0 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">Overview</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Exchange</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Fund Analysis</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Referral</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">History</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="exchange.html">Exchange</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="fund-analysis.html">Fund Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="referal.html">Referral</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="history.html">History</a></li>
                 </ul>
             </div>
         </div>
@@ -59,7 +85,7 @@
                 </div>
                 <div>
                     <div><label class="form-label fs-7 text-sub-500">Your Message</label><textarea class="form-control" placeholder="Enter your message" rows="5"></textarea></div>
-                </div><a class="btn btn-primary" role="button" href="contact-2.html">Create Ticket</a>
+                </div><a class="btn btn-primary" role="button">Create Ticket</a>
             </form>
         </div>
     </section>
