@@ -71,7 +71,7 @@
             <div class="pt-2"><div>
     <table id="example" class="table dataTable table-responsive w-100">
         <thead>
-            <tr>
+            <tr data-bs-toggle="modal" data-bs-target="#modal-filter">
                 <th class="text-uppercase">ticket id</th>
                 <th class="text-uppercase">subject</th>
                 <th class="text-uppercase">status</th>
@@ -153,6 +153,46 @@
                                     <div class="d-flex flex-column align-items-stretch"><button class="btn btn-primary" type="button">Close Ticket</button></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal-filter" data-bs-backdrop="false">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header border-0 px-4 pt-4"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                        <div class="modal-body px-4 pb-4 pt-0">
+                            <form class="d-flex flex-column gap-4">
+                                <div>
+                                    <h4 class="fs-6 fw-medium text-sub-500">Add Filter</h4>
+                                </div>
+                                <div><label class="form-label fw-medium text-heading">Ticket ID</label><input class="form-control" type="text" placeholder="Enter a specific ticket ID"></div>
+                                <div>
+                                    <div><label class="form-label fw-medium text-heading">Subject</label><select class="form-select" placeholder="Choose a subject for your request">
+                                            <option value="0" selected="">Choose a subject for your request</option>
+                                        </select></div>
+                                </div>
+                                <div>
+                                    <div><label class="form-label fw-medium text-heading">Status</label>
+                                        <div class="d-flex gap-4">
+                                            <div class="form-check d-flex gap-3 fs-7 text-heading fw-medium"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Replied</label></div>
+                                            <div class="form-check d-flex gap-3 fs-7 text-heading fw-medium"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Waiting for Reply</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div><label class="form-label fw-medium text-heading">Created</label>
+                                        <div class="row gy-3 gy-lg-0">
+                                            <div class="col-lg-6">
+                                                <div class="d-flex flex-column gap-2"><span class="fs-8 fw-medium">From</span><input class="form-control" type="date"></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex flex-column gap-2"><span class="fs-8 fw-medium">To</span><input class="form-control" type="date"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><a class="btn btn-primary" role="button" href="contact-ticket-created.html">Create Ticket</a>
+                            </form>
                         </div>
                     </div>
                 </div>
