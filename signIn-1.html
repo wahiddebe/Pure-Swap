@@ -21,9 +21,9 @@
 
 <body>
     <section class="d-flex min-vh-100 bg-auth">
-        <div class="d-flex flex-column justify-content-center align-items-stretch flex-lg-row rounded-5 w-100" style="overflow: hidden;">
-            <div class="text-center bg-white d-flex flex-column justify-content-center align-items-center p-5 gap-4_5 col-lg-6 h-100 position-relative" id="seg-1">
-                <div class="align-self-start top-0 position-absolute pt-5"><a class="text-decoration-none d-flex align-items-center gap-3" href="signIn.html"><img src="assets/img/arrow-left.svg">
+        <div class="d-flex w-100 flex-column justify-content-center align-items-stretch flex-lg-row rounded-5" style="overflow: hidden;">
+            <div class="text-center bg-white position-relative d-flex h-100 flex-column justify-content-center align-items-center p-5 gap-4_5 col-lg-6" id="seg-1">
+                <div class="position-absolute top-0 align-self-start pt-5"><a class="text-decoration-none d-flex align-items-center gap-3" href="signIn.html"><img src="assets/img/arrow-left.svg">
                         <p class="fs-6_5 text-heading fw-medium">Back</p>
                     </a></div>
                 <div><a class="text-decoration-none" href="#"><img src="assets/img/logo-footer.svg"></a></div>
@@ -34,8 +34,8 @@
                     <form class="d-flex flex-column"><label class="form-label align-self-start fs-7 text-sub-500">Username / Secret Phrase</label><input class="form-control mb-2" type="text" id="username" placeholder="Username / Secret Phrase"><button class="btn btn-primary mt-4" type="button" onclick="next(1)">Continue</button></form>
                 </div>
             </div>
-            <div class="text-center bg-white d-none flex-column justify-content-center align-items-center p-5 gap-4_5 col-lg-6 h-100 position-relative" id="seg-2">
-                <div class="align-self-start top-0 position-absolute pt-5"><a class="text-decoration-none d-flex align-items-center gap-3" href="#" onclick="back(1)"><img src="assets/img/arrow-left.svg">
+            <div class="text-center bg-white position-relative d-none h-100 flex-column justify-content-center align-items-center p-5 gap-4_5 col-lg-6" id="seg-2">
+                <div class="position-absolute top-0 align-self-start pt-5"><a class="text-decoration-none d-flex align-items-center gap-3" href="#" onclick="back(1)"><img src="assets/img/arrow-left.svg">
                         <p class="fs-6_5 text-heading fw-medium">Back</p>
                     </a></div>
                 <div><a class="text-decoration-none" href="#"><img src="assets/img/logo-footer.svg"></a></div>
@@ -44,12 +44,12 @@
                 </div>
                 <div class="w-100">
                     <form class="d-flex flex-column"><label class="form-label align-self-start fs-7 text-sub-500">Password</label>
-                        <div class="input-group mb-3"><input class="form-control border-end-0" type="password" id="password-input"><span class="bg-white input-group-text border-start-0" id="eye-span" onclick="typeChanger()"><img id="eye-off" src="assets/img/eye-off.svg"><img class="d-none" id="eye" src="assets/img/eye.svg" style="width: 20px;height: 20px;"></span></div><a class="fs-5 text-decoration-none align-self-end fs-7 mb-2 fw-medium" href="#">Forgot Password</a><button class="btn btn-primary mt-4" type="button" onclick="">Sign In</button>
+                        <div class="input-group mb-3"><input class="form-control border-end-0" type="password" id="password-input"><span class="bg-white input-group-text border-start-0" id="eye-span" onclick="typeChanger()"><img id="eye-off" src="assets/img/eye-off.svg"><img class="d-none" id="eye" src="assets/img/eye.svg" style="width: 20px;height: 20px;"></span></div><a class="fs-5 text-decoration-none align-self-end mb-2 fs-7 fw-medium" href="#">Forgot Password</a><button class="btn btn-primary mt-4" type="button" onclick="">Sign In</button>
                     </form>
                 </div>
             </div>
-            <div class="text-center bg-white d-none flex-column justify-content-center align-items-center p-5 gap-4_5 col-lg-6 h-100 position-relative" id="seg-3">
-                <div class="align-self-start top-0 position-absolute pt-5"><a class="text-decoration-none d-flex align-items-center gap-3" href="#" onclick="back(2)"><img src="assets/img/arrow-left.svg">
+            <div class="text-center bg-white position-relative d-none h-100 flex-column justify-content-center align-items-center p-5 gap-4_5 col-lg-6" id="seg-3">
+                <div class="position-absolute top-0 align-self-start pt-5"><a class="text-decoration-none d-flex align-items-center gap-3" href="#" onclick="back(2)"><img src="assets/img/arrow-left.svg">
                         <p class="fs-6_5 text-heading fw-medium">Back</p>
                     </a></div>
                 <div><a class="text-decoration-none" href="#"><img src="assets/img/logo-footer.svg"></a></div>
@@ -57,11 +57,11 @@
                     <h2>Sign in to your account</h2>
                 </div>
                 <div class="w-100">
-                    <form class="d-flex flex-column"><label class="form-label align-self-start fs-7 text-sub-500">Two-Factor Authentication</label><input class="form-control mb-3" type="text" placeholder="Enter 2FA Code"><a class="fs-5 text-decoration-none align-self-end fs-7 mb-2 fw-medium" href="#">I don’t have access to my 2FA</a><button class="btn btn-primary mt-4" type="button">Submit</button></form>
+                    <form class="d-flex flex-column"><label class="form-label align-self-start fs-7 text-sub-500">Two-Factor Authentication</label><input class="form-control mb-3" type="text" placeholder="Enter 2FA Code"><a class="fs-5 text-decoration-none align-self-end mb-2 fs-7 fw-medium" href="#">I don’t have access to my 2FA</a><button class="btn btn-primary mt-4" type="button">Submit</button></form>
                 </div>
             </div>
             <div class="d-none d-lg-flex flex-column p-4_5 col-6" style="background: url(&quot;assets/img/Frame%201000006151.png&quot;) bottom / contain no-repeat, #16336b;">
-                <div class="d-xl-flex justify-content-xl-center align-items-xl-center w-100 mb-4_5"><img class="img-fluid" src="assets/img/Group%208.svg"></div>
+                <div class="d-xl-flex w-100 justify-content-xl-center align-items-xl-center mb-4_5"><img class="img-fluid" src="assets/img/Group%208.svg"></div>
                 <div class="mb-4">
                     <h2 class="text-white mb-3">Dashboard Access</h2>
                     <p class="text-white fs-6_5">Create an account with SmartSwap to access all features</p>
