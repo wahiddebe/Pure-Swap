@@ -21,19 +21,19 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body d-flex px-4 px-lg-2 py-3 px-xl-6">
-        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="d-flex justify-content-between align-items-center order-lg-last gap-4">
-                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="contact.html"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
+                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
                 <div class="d-none d-lg-flex align-items-center p-2 bg-weak rounded-3 gap-3">
-                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg" width="20" height="20"><span>3.7</span></div>
+                    <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
                     <div class="devider-nav"></div>
                     <div class="cashback-notif">
                         <p class="fs-8">Receive drops cashback with every exchange you make and use them to create funds analysis</p>
                     </div>
                 </div>
                 <div class="devider-nav"></div>
-                <div class="dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span>Jonas Key</span></a>
-                    <div class="dropdown-menu dropdown-menu-end p-4 gap-4">
+                <div class="dropdown" id="profile-dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span>Jonas Key</span></a>
+                    <div class="dropdown-menu dropdown-menu-end gap-4 p-4 profile">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <div class="d-flex align-items-stretch gap-2"><img src="../assets/img/dashboard/jonas.svg">
                                 <div class="d-flex flex-column justify-content-between"><span class="fs-7 fw-medium text-heading">Jonas Khanwald</span><span class="fs-8 text-heading">@jonaskhanwald_</span></div>
@@ -41,12 +41,12 @@
                             <div class="d-flex justify-content-center align-items-center badge-nav-profile gap-2"><img src="../assets/img/dashboard/blue-orange-object-with-star-it%201.svg"><span>Starter</span></div>
                         </div>
                         <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div>
-                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="exchange.html">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="fund-analysis.html">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="referal.html">Referral</a><a class="text-decoration-none text-heading fw-medium" href="history.html">History</a><a class="text-decoration-none text-heading fw-medium" href="notif.html">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="contact.html">Support</a><a class="text-decoration-none text-heading fw-medium" href="setting.html">Settings</a></div>
+                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="#">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="#">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="#">Referral</a><a class="text-decoration-none text-heading fw-medium" href="#">History</a><a class="text-decoration-none text-heading fw-medium" href="#">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="#">Support</a><a class="text-decoration-none text-heading fw-medium" href="#">Settings</a></div>
                         <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div><a class="text-decoration-none text-danger fw-medium" href="#"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
                     </div>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="navcol-1">
+            <div class="collapse navbar-collapse" id="navcol-2">
                 <div class="d-flex d-lg-none align-items-center p-2 mt-4 bg-weak rounded-3 gap-3">
                     <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
                     <div class="devider-nav"></div>
@@ -66,28 +66,66 @@
     </nav>
     <section class="min-vh-100 px-4 py-4 px-lg-7 bg-weak">
         <div class="bg-white rounded-5 gap-2 p-4">
-            <div class="d-flex flex-column justify-content-between gap-4 flex-lg-row align-items-lg-center"><a class="text-decoration-none d-flex align-items-center gap-3" href="contact.html">
-                    <p class="fs-5 text-heading fw-medium">Settings</p>
+            <div class="d-flex flex-column justify-content-between gap-4 flex-lg-row align-items-lg-center mb-4"><a class="text-decoration-none d-flex align-items-center gap-3" href="contact.html">
+                    <p class="fs-4 fw-semibold text-heading">Settings</p>
                 </a></div>
-        </div>
-        <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header border-0 pt-4 px-4 px-lg-4_5 pt-lg-4_5"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                    <div class="modal-body text-center d-flex flex-column justify-content-center pt-0 pb-4 px-4 px-lg-4_5 gap-3 pb-lg-4_5 gap-3">
-                        <div><img src="../assets/img/dashboard/3d-realistic-cross-checkmark-sign-vector-illustration%201.svg">
-                            <div class="d-flex flex-column align-items-center gap-2">
-                                <p class="fs-5 text-heading fw-medium">All Notification</p>
-                                <p class="col-lg-8">All Notification will be deleted from our database as soon as you clear all notification, this action cannot be undone.</p>
+            <div class="d-flex flex-column align-items-start gap-4 flex-lg-row justify-content-lg-between mb-4">
+                <div>
+                    <h1 class="mb-3 fs-6_5">Account</h1>
+                    <div class="d-flex align-items-center gap-4 mb-4">
+                        <div><span class="mb-2 fw-medium fs-7">Profile Picture</span>
+                            <div><span><img class="img-fluid" width="48" height="48" src="../assets/img/dashboard/Ellipse%2076.svg"></span></div>
+                        </div>
+                        <div class="devider-profile"></div>
+                        <div><span class="mb-2 fw-medium fs-7">Profile Picture</span>
+                            <div class="d-flex gap-2"><span><img class="img-fluid" width="48" height="48" src="../assets/img/dashboard/Ellipse%2077.svg"></span><span><img class="img-fluid" width="48" height="48" src="../assets/img/dashboard/Ellipse%2078.svg"></span><span><img class="img-fluid" width="48" height="48" src="../assets/img/dashboard/Ellipse%2079.svg"></span><span><img class="img-fluid" width="48" height="48" src="../assets/img/dashboard/Ellipse%2080.svg"></span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <form><label class="form-label align-self-start fs-7 text-sub-500">Username / Secret Phrase</label><input class="form-control mb-2" type="text" placeholder="Username" value="jonaskhanwald_"><a class="fw-medium fs-7" href="setting-change-password.html">Change Password</a></form>
+                    </div>
+                </div><a class="btn btn-sm d-flex justify-content-center align-items-center gap-2 px-3 py-2 btn-outline-soft-200 text-primary fs-7" role="button" data-bs-target="#modal-1" data-bs-toggle="modal" href="setting-change-secret-phrase.html"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/notif/lock-square-rounded.svg"><span>View Secret Phrase</span></a>
+            </div>
+            <div class="mb-4">
+                <div>
+                    <h1 class="mb-3 fs-6_5">Dashboard Notifications</h1>
+                    <form>
+                        <div class="row gy-4">
+                            <div class="col col-lg-4">
+                                <div class="form-check fs-6 text-heading"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Login alerts</label></div>
+                            </div>
+                            <div class="col col-lg-4">
+                                <div class="form-check fs-6 text-heading"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Exchange Order</label></div>
+                            </div>
+                            <div class="col col-lg-4">
+                                <div class="form-check fs-6 text-heading"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">New Referral</label></div>
+                            </div>
+                            <div class="col col-lg-4">
+                                <div class="form-check fs-6 text-heading"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Commission Earned</label></div>
+                            </div>
+                            <div class="col col-lg-4">
+                                <div class="form-check fs-6 text-heading"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Fund Analysis</label></div>
                             </div>
                         </div>
-                        <div class="row gy-3 gy-lg-0 pt-0 pt-lg-3">
-                            <div class="col-lg-6">
-                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-outline-soft-200 text-heading" type="button" data-bs-dismiss="modal">Cancel</button></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-primary" type="button">Clear All Notification</button></div>
-                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mb-3"><button class="btn btn-primary" type="button">Update</button></div>
+            <div class="overflow-hidden mb-3"><img width="1216" height="2" src="../assets/img/dashboard/Vector%2021.svg"></div>
+            <div class="mb-4">
+                <div>
+                    <h1 class="mb-3 fs-6_5">Security</h1>
+                    <div class="form-check form-switch form-check-inline form-check-reverse mb-3 text-heading"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Two-Factor Authentication (2FA)</label></div>
+                    <div class="rounded-4 d-flex flex-column align-items-center gap-4 flex-lg-row p-4" style="background: rgba(62,126,255,0.05);">
+                        <div class="bg-white rounded-4 d-flex flex-column align-items-stretch p-4"><img class="img-fluid mb-4" width="200" height="200" src="../assets/img/dashboard/barcode.svg"><button class="btn border rounded-3 d-flex justify-content-center align-items-center gap-2 fs-7 text-heading border-soft-200" id="copy-code-button" type="button" onclick="copy_code()" onmouseout="outCopyFunc()"><span id="copy-code-button-span">HJJ4TMZLEGBNEF14</span><img src="../assets/img/copy.svg"></button></div>
+                        <div class="d-flex flex-column gap-3">
+                            <ol class="d-flex flex-column gap-3 text-heading fs-6_5">
+                                <li>Get an authentication app, for example Google Authenticator<div class="d-flex flex-column gap-2 flex-lg-row mt-3"><a href="#"><img class="img-fluid" width="108" height="32" src="../assets/img/dashboard/Badge-google.svg"></a><a href="#"><img class="img-fluid" width="97" height="32" src="../assets/img/dashboard/Badge.svg"></a></div>
+                                </li>
+                                <li>Scan QR Code or enter key manually </li>
+                                <li>Enter the 6-digit code you see in the app</li>
+                            </ol>
+                            <form class="d-flex flex-column align-items-stretch gap-2 flex-lg-row align-items-lg-center"><input class="form-control" type="text" placeholder="Enter code" value=""><a class="btn btn-primary text-nowrap fs-6" role="button" href="setting-2.html">Activate 2FA</a></form>
                         </div>
                     </div>
                 </div>
