@@ -22,9 +22,9 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body d-flex px-4 px-lg-2 py-3 px-xl-6">
-        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="d-flex justify-content-between align-items-center order-lg-last gap-4">
-                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
+                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="contact.html"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
                 <div class="d-none d-lg-flex align-items-center p-2 bg-weak rounded-3 gap-3">
                     <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
                     <div class="devider-nav"></div>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="devider-nav"></div>
-                <div class="dropdown" id="profile-dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span>Jonas Key</span></a>
+                <div class="dropdown" id="profile-dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span class="d-none d-lg-block">Jonas Key</span></a>
                     <div class="dropdown-menu dropdown-menu-end gap-4 p-4 profile">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <div class="d-flex align-items-stretch gap-2"><img src="../assets/img/dashboard/jonas.svg">
@@ -42,12 +42,12 @@
                             <div class="d-flex justify-content-center align-items-center badge-nav-profile gap-2"><img src="../assets/img/dashboard/blue-orange-object-with-star-it%201.svg"><span>Starter</span></div>
                         </div>
                         <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div>
-                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="#">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="#">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="#">Referral</a><a class="text-decoration-none text-heading fw-medium" href="#">History</a><a class="text-decoration-none text-heading fw-medium" href="#">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="#">Support</a><a class="text-decoration-none text-heading fw-medium" href="#">Settings</a></div>
-                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div><a class="text-decoration-none text-danger fw-medium" href="#"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
+                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="exchange.html">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="fund-analysis.html">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="referal.html">Referral</a><a class="text-decoration-none text-heading fw-medium" href="history.html">History</a><a class="text-decoration-none text-heading fw-medium" href="notif.html">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="contact.html">Support</a><a class="text-decoration-none text-heading fw-medium" href="setting.html">Settings</a></div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div><a class="text-decoration-none text-danger fw-medium" href="../index.html"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
                     </div>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="navcol-2">
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <div class="d-flex d-lg-none align-items-center p-2 mt-4 bg-weak rounded-3 gap-3">
                     <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
                     <div class="devider-nav"></div>
@@ -69,21 +69,24 @@
         <div class="bg-white p-4 rounded-5">
             <form class="d-flex flex-column gap-4">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h4>Contact Us</h4><button class="btn btn-outline-soft-200 btn-sm text-heading" type="button"><img class="me-2" src="../assets/img/dashboard/ticket.svg"><span>See Active Tickets</span></button>
+                    <h4>Contact Us</h4><a class="btn btn-outline-soft-200 btn-sm text-heading" role="button" href="contact-active-ticket.html"><img class="me-2" src="../assets/img/dashboard/ticket.svg"><span>See Active Tickets</span></a>
                 </div>
                 <div class="row gy-4 gx-lg-4 gy-lg-0">
                     <div class="col-lg-6">
-                        <div><label class="form-label fs-7 text-sub-500">Name</label>
-                            <div class="d-flex align-items-center gap-3"><input class="form-control" type="text" id="name-generate-input-1" placeholder="Enter your name"><button class="btn btn-primary btn-sm" type="button" onclick="generateName()">Generate</button></div>
+                        <div><label class="form-label fs-7 text-sub-500">Username</label>
+                            <div class="d-flex align-items-center gap-3"><input class="form-control" type="text" id="name-generate-input-1" placeholder="Enter your username" readonly="" value="@jonaskhanwald_"></div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div><label class="form-label fs-7 text-sub-500">Order ID</label><input class="form-control" type="text" placeholder="Enter order ID you need help with"></div>
+                        <div><label class="form-label fs-7 text-sub-500">Order ID</label><input class="form-control" type="text" id="order-id" placeholder="Enter order ID you need help with" disabled=""></div>
                     </div>
                 </div>
                 <div>
-                    <div><label class="form-label fs-7 text-sub-500">Subject</label><select class="form-select selectpicker" data-live-search="true" title="Choose a subject for your request">
-                            <option value="0">subject</option>
+                    <div><label class="form-label fs-7 text-sub-500">Subject</label><select class="form-select selectpicker" id="subject-id" data-live-search="false" title="Choose a subject for your request" onchange="order(&#39;order-id&#39;,&#39;subject-id&#39;)">
+                            <option value="0">General Inquiry</option>
+                            <option value="1">Order Inquiry</option>
+                            <option value="2">Affiliate Inquiry</option>
+                            <option value="3">PR Inquiry</option>
                         </select></div>
                 </div>
                 <div>

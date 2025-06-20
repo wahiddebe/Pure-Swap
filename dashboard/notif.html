@@ -22,9 +22,9 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body d-flex px-4 px-lg-2 py-3 px-xl-6">
-        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="d-flex justify-content-between align-items-center order-lg-last gap-4">
-                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
+                <div class="d-flex align-items-center gap-2"><a class="text-decoration-none" href="notif.html"><img src="../assets/img/dashboard/bell.svg"></a><a class="text-decoration-none" href="contact.html"><img src="../assets/img/dashboard/headset.svg"></a><a class="text-decoration-none" href="setting.html"><img src="../assets/img/dashboard/settings.svg"></a></div>
                 <div class="d-none d-lg-flex align-items-center p-2 bg-weak rounded-3 gap-3">
                     <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
                     <div class="devider-nav"></div>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="devider-nav"></div>
-                <div class="dropdown" id="profile-dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span>Jonas Key</span></a>
+                <div class="dropdown" id="profile-dropdown"><a class="dropdown-toggle text-decoration-none d-flex align-items-center text-heading fs-8 gap-2 fw-medium" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img src="../assets/img/dashboard/jonas.svg"><span class="d-none d-lg-block">Jonas Key</span></a>
                     <div class="dropdown-menu dropdown-menu-end gap-4 p-4 profile">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <div class="d-flex align-items-stretch gap-2"><img src="../assets/img/dashboard/jonas.svg">
@@ -42,12 +42,12 @@
                             <div class="d-flex justify-content-center align-items-center badge-nav-profile gap-2"><img src="../assets/img/dashboard/blue-orange-object-with-star-it%201.svg"><span>Starter</span></div>
                         </div>
                         <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div>
-                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="#">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="#">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="#">Referral</a><a class="text-decoration-none text-heading fw-medium" href="#">History</a><a class="text-decoration-none text-heading fw-medium" href="#">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="#">Support</a><a class="text-decoration-none text-heading fw-medium" href="#">Settings</a></div>
-                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div><a class="text-decoration-none text-danger fw-medium" href="#"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
+                        <div class="text-decoration-none d-flex flex-column mb-4 gap-3"><a class="text-decoration-none text-heading fw-medium" href="exchange.html">Exchange</a><a class="text-decoration-none text-heading fw-medium" href="fund-analysis.html">Fund Analysis</a><a class="text-decoration-none text-heading fw-medium" href="referal.html">Referral</a><a class="text-decoration-none text-heading fw-medium" href="history.html">History</a><a class="text-decoration-none text-heading fw-medium" href="notif.html">Notifications</a><a class="text-decoration-none text-heading fw-medium" href="contact.html">Support</a><a class="text-decoration-none text-heading fw-medium" href="setting.html">Settings</a></div>
+                        <div class="w-100 mb-4 border border-bottom-1 border-soft-200"></div><a class="text-decoration-none text-danger fw-medium" href="../index.html"><img class="me-2" src="../assets/img/dashboard/logout.svg"><span>Logout</span></a>
                     </div>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="navcol-2">
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <div class="d-flex d-lg-none align-items-center p-2 mt-4 bg-weak rounded-3 gap-3">
                     <div class="d-flex align-items-center fs-7 fw fw-medium text-heading gap-1"><img src="../assets/img/dashboard/droplet.svg"><span>3.7</span></div>
                     <div class="devider-nav"></div>
@@ -389,7 +389,30 @@
                                 <div class="d-flex flex-column align-items-stretch"><button class="btn btn-outline-soft-200 text-heading" type="button" data-bs-dismiss="modal">Cancel</button></div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-primary" type="button">Clear All Notification</button></div>
+                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-primary" type="button" onclick="hideall(&#39;notif-wrap&#39;,&#39;modal-1&#39;)">Clear All Notification</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-2">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pt-4 px-4 px-lg-4_5 pt-lg-4_5"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body text-center d-flex flex-column justify-content-center pt-0 pb-4 px-4 px-lg-4_5 gap-3 pb-lg-4_5 gap-3">
+                        <div><img src="../assets/img/dashboard/3d-realistic-cross-checkmark-sign-vector-illustration%201.svg">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <p class="fs-5 text-heading fw-medium">This Notification</p>
+                                <p class="col-lg-8">This Notification will be deleted from our database as soon as you clear this notification, this action cannot be undone.</p>
+                            </div>
+                        </div>
+                        <div class="row gy-3 gy-lg-0 pt-0 pt-lg-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-outline-soft-200 text-heading" type="button" data-bs-dismiss="modal">Cancel</button></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-stretch"><button class="btn btn-primary" type="button">Clear Notification</button></div>
                             </div>
                         </div>
                     </div>
