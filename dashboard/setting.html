@@ -117,7 +117,7 @@
                 <div>
                     <h1 class="mb-3 fs-6_5">Security</h1>
                     <div class="form-check form-switch form-check-inline form-check-reverse mb-3 text-heading"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Two-Factor Authentication (2FA)</label></div>
-                    <div class="rounded-4 d-flex flex-column align-items-center gap-4 flex-lg-row p-4" style="background: rgba(62,126,255,0.05);">
+                    <div class="rounded-4 d-flex flex-column align-items-center gap-4 flex-lg-row p-4" id="div-active-fa" style="background: rgba(62,126,255,0.05);">
                         <div class="bg-white rounded-4 d-flex flex-column align-items-stretch p-4"><img class="img-fluid mb-4" width="200" height="200" src="../assets/img/dashboard/barcode.svg"><button class="btn border rounded-3 d-flex justify-content-center align-items-center gap-2 fs-7 text-heading border-soft-200" id="copy-code-button" type="button" onclick="copy_code()" onmouseout="outCopyFunc()"><span id="copy-code-button-span">HJJ4TMZLEGBNEF14</span><img src="../assets/img/copy.svg"></button></div>
                         <div class="d-flex flex-column gap-3">
                             <ol class="d-flex flex-column gap-3 text-heading fs-6_5">
@@ -127,6 +127,12 @@
                                 <li>Enter the 6-digit code you see in the app</li>
                             </ol>
                             <form class="d-flex flex-column align-items-stretch gap-2 flex-lg-row align-items-lg-center"><input class="form-control" type="text" placeholder="Enter code" value=""><a class="btn btn-primary text-nowrap fs-6" role="button" href="setting-2.html">Activate 2FA</a></form>
+                        </div>
+                    </div>
+                    <div class="rounded-4 d-none p-4" id="div-deactive-fa" style="background: rgba(62,126,255,0.05);">
+                        <div class="col-lg-7"><span class="mb-2 fs-7">You are deactivating Two-Factor Authentication</span>
+                            <form class="d-flex flex-column align-items-stretch gap-2 flex-lg-row align-items-lg-center mb-3"><input class="form-control" type="text" placeholder="Enter code" value=""><button class="btn btn-primary text-nowrap fs-6" type="button" onclick="deactiveFa()">Deactivate 2FA</button></form>
+                            <div class="text-danger d-flex align-items-center gap-2 fs-7"><img class="img-fluid" width="16" height="16" src="../assets/img/dashboard/alert-triangle-filled.svg"><span>We do not recommend to deactivate the Two-Factor Authentication</span></div>
                         </div>
                     </div>
                 </div>

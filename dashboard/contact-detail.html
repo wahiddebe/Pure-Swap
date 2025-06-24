@@ -70,46 +70,72 @@
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <div><a class="text-decoration-none d-flex align-items-center gap-3" href="contact.html"><img src="../assets/img/arrow-left.svg">
                         <p class="fs-5 text-heading fw-medium">Ticket GH6f7uF73g3EE</p>
-                    </a></div><button class="btn d-flex justify-content-center align-items-center btn-outline-soft-200 text-danger gap-2" type="button"><img src="../assets/img/trash.svg"><span>Close Ticket</span></button>
+                    </a></div><a class="btn d-flex justify-content-center align-items-center btn-outline-soft-200 text-danger gap-2" role="button" href="contact.html"><img src="../assets/img/trash.svg"><span>Close Ticket</span></a>
             </div>
-            <div><a class="btn d-flex justify-content-between align-items-center p-4 mb-4 d-block bg-weak rounded-4" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button"><span class="fw-semibold fs-6_5 text-heading">Ticket Details</span><img src="../assets/img/chevron-down.svg"></a>
-                <div class="collapse show border rounded border-1 overflow-hidden border-wak rounded-4" id="collapse-1">
-                    <div class="d-flex align-items-center p-4 gap-3"><img src="../assets/img/user-support.svg">
-                        <p class="fs-6_5 text-heading fw-medium">Support Chat</p>
-                    </div>
-                    <div class="d-flex flex-column justify-content-between p-4 bg-weak gap-4 chat-container">
+            <div class="mb-4"><a class="btn rounded-4 d-flex justify-content-between align-items-center p-4 mb-2 bg-weak" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button"><span class="fw-semibold fs-6_5 text-heading">Ticket Details</span><img src="../assets/img/chevron-down.svg"></a>
+                <div class="collapse show" id="collapse-1">
+                    <div class="d-flex flex-column p-4 pt-4 mb-4 rounded-4 bg-weak gap-4">
+                        <div class="d-flex flex-column justify-content-between flex-lg-row gap-4">
+                            <div>
+                                <h1 class="fs-6 mb-2 fw-medium">Ticket ID</h1>
+                                <div class="d-flex align-items-center gap-2"><span class="fs-7">GH6f7uF73g3EE</span><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/copy.svg"></a></div>
+                            </div>
+                            <div>
+                                <h1 class="fs-6 mb-2 fw-medium">Subject</h1>
+                                <div class="d-flex align-items-center gap-2"><span class="fs-7">Order Request</span></div>
+                            </div>
+                            <div>
+                                <h1 class="fs-6 mb-2 fw-medium">Order ID</h1>
+                                <div class="d-flex align-items-center gap-2"><span class="fs-7">TXIDHGAD72GHDA</span><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/copy.svg"></a></div>
+                            </div>
+                        </div>
                         <div>
-                            <div class="d-flex justify-content-between p-4 rounded-4 bg-warning-50">
-                                <div>
-                                    <h1 class="mb-2 fs-6_5">We are here for you!</h1>
-                                    <p class="fs-7 text-sub-500">It usually takes up to 24 hours to get a reply. Please bare with us.</p>
-                                </div>
-                                <div><img src="../assets/img/x.svg"></div>
-                            </div>
+                            <h1 class="fs-6 mb-2 fw-medium">Ticket Link</h1>
+                            <div class="d-flex align-items-center gap-2"><span class="fs-7">https://smartswap.com/contact/ticket/KL82i9oPL91</span><a class="text-decoration-none" href="#"><img src="../assets/img/dashboard/copy.svg"></a></div>
                         </div>
-                        <div class="d-flex flex-column justify-content-end gap-4">
-                            <div class="align-self-end col-lg-6">
-                                <div class="text-white bg-primary p-4 mb-2 rounded-4 fs-7">
-                                    <p>I have issues with my order. I have not received it yet, and it’s already 10 minutes. Can you please check and advise what to do? Thank you!</p>
-                                </div>
-                                <p class="text-end fs-8">14:23 PM</p>
-                            </div>
-                            <div class="align-self-start col-lg-6">
-                                <div class="text-dark bg-white p-4 mb-2 rounded-4 fs-7">
-                                    <p>Hi, thank you for your message. We have checked your exchange and it’s already completed. We have sent it to the following address:</p>
-                                </div>
-                                <p class="text-start fs-8">14:23 PM</p>
-                            </div>
-                            <div class="align-self-start col-lg-6">
-                                <div class="text-dark bg-white p-4 mb-2 rounded-4 fs-7">
-                                    <p>Hi, thank you for your message. We have checked your exchange and it’s already completed. We have sent it to the following address:</p>
-                                </div>
-                                <p class="text-start fs-8">14:23 PM</p>
-                            </div>
+                        <div>
+                            <h1 class="fs-6 mb-2 fw-medium">Message</h1>
+                            <div class="d-flex align-items-center gap-2"><span class="fs-7">I have issues with my order. I have not received it yet, and it’s already 10 minutes. Can you please check and advise what to do? Thank you!</span></div>
                         </div>
                     </div>
-                    <div class="d-flex p-4 gap-2"><input class="border-0 form-control" type="text" placeholder="Type your message..."><button class="btn btn-primary btn-sm" type="button">Send</button></div>
                 </div>
+            </div>
+            <div class="border rounded-4 border-1 overflow-hidden border-wak">
+                <div class="d-flex align-items-center p-4 gap-3"><img src="../assets/img/user-support.svg">
+                    <p class="fs-6_5 text-heading fw-medium">Support Chat</p>
+                </div>
+                <div class="d-flex flex-column justify-content-between p-4 bg-weak gap-4 chat-container" id="chat-container">
+                    <div>
+                        <div class="d-flex justify-content-between p-4 rounded-4 bg-warning-50" id="fa">
+                            <div>
+                                <h1 class="mb-2 fs-6_5">We are here for you!</h1>
+                                <p class="fs-7 text-sub-500">It usually takes up to 24 hours to get a reply. Please bare with us.</p>
+                            </div>
+                            <div onclick="hide(&#39;fa&#39;)"><img src="../assets/img/x.svg"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-end gap-4" id="chat-wrap">
+                        <div class="align-self-end col-lg-6">
+                            <div class="text-white bg-primary p-4 mb-2 rounded-4 fs-7">
+                                <p>I have issues with my order. I have not received it yet, and it’s already 10 minutes. Can you please check and advise what to do? Thank you!</p>
+                            </div>
+                            <p class="text-end fs-8">14:23 PM</p>
+                        </div>
+                        <div class="align-self-start col-lg-6">
+                            <div class="text-dark bg-white p-4 mb-2 rounded-4 fs-7">
+                                <p>Hi, thank you for your message. We have checked your exchange and it’s already completed. We have sent it to the following address:</p>
+                            </div>
+                            <p class="text-start fs-8">14:23 PM</p>
+                        </div>
+                        <div class="align-self-start col-lg-6">
+                            <div class="text-dark bg-white p-4 mb-2 rounded-4 fs-7">
+                                <p>Hi, thank you for your message. We have checked your exchange and it’s already completed. We have sent it to the following address:</p>
+                            </div>
+                            <p class="text-start fs-8">14:23 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex p-4 gap-2"><input class="border-0 form-control" type="text" id="chat-input" placeholder="Type your message..."><button class="btn btn-primary btn-sm" type="button" onclick="chat()">Send</button></div>
             </div>
         </div>
     </section>
