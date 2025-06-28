@@ -120,7 +120,7 @@
                                         <div class="bg-white border rounded-4 p-3 p-lg-4 col-12">
                                             <div>
                                                 <div class="position-relative d-flex flex-column justify-content-center align-items-center mb-4">
-                                                    <div class="row gx-2 gy-2 align-self-stretch">
+                                                    <div class="row gx-2 gy-2">
                                                         <div class="col-12">
                                                             <div class="border rounded-4 p-1">
                                                                 <div class="p-3"><span class="fw-medium fs-7" style="opacity: 0.50;">Send</span>
@@ -128,16 +128,16 @@
                                                                         <div>
                                                                             <div class="d-flex align-items-center gap-2"><img class="img-fluid" id="img-coin-1" src="assets/img/coin/Coin%20Logo.svg" width="32" height="32">
                                                                                 <div>
-                                                                                    <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" data-live-search="true">
+                                                                                    <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" id="coin-select-1" data-live-search="true">
                                                                                             <option value="bitcoin" selected="">BTC</option>
-                                                                                            <option value="etherium">ETH</option>
+                                                                                            <option value="ethereum">ETH</option>
                                                                                         </select>
-                                                                                        <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span>Bitcoin</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-yellow">BTC</span></div>
+                                                                                        <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span id="coin-name-1">Bitcoin</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-yellow" id="coin-badge-1">BTC</span></div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="text-end d-flex flex-column align-items-end flex-wrap gap-1 col-6"><input class="border-0 p-0 text-end fs-2 text-heading fw-semibold col-8" type="text" value="20"><span class="fw-medium">$1856105.23</span></div>
+                                                                        <div class="text-end d-flex flex-column align-items-end gap-1"><input class="border-0 w-50 text-end fs-2 text-heading fw-semibold" type="number" id="coin-input-1" value="20" oninput="convert()" min="0"><span id="dolar-coin-1" class="fw-medium">$1856105.23</span></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -149,30 +149,33 @@
                                                                         <div>
                                                                             <div class="d-flex align-items-center gap-2"><img class="img-fluid" id="img-coin-2" src="assets/img/coin/Coin%20Logo-1.svg" width="32" height="32">
                                                                                 <div>
-                                                                                    <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" data-live-search="true">
+                                                                                    <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" id="coin-select-2" data-live-search="true">
                                                                                             <option value="bitcoin">BTC</option>
-                                                                                            <option value="etherium" selected="">ETH</option>
+                                                                                            <option value="ethereum" selected="">ETH</option>
                                                                                         </select>
-                                                                                        <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span>Ethereum</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-blue">ETH</span></div>
+                                                                                        <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span id="coin-name-2">Ethereum</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-blue" id="coin-badge-2">ETH</span></div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="text-end d-flex flex-column align-items-end flex-wrap gap-1 col-6"><input class="border-0 p-0 text-end fs-2 text-heading fw-semibold col-8" type="text" value="1002.728"><span class="fw-medium">$1796133.90</span></div>
+                                                                        <div class="text-end d-flex flex-column align-items-end gap-1"><input class="border-0 w-50 text-end fs-2 text-heading fw-semibold" type="number" id="coin-input-2" readonly="" value="1033.4" min="0"><span id="dolar-coin-2" class="fw-medium">$1796133.90</span></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="position-absolute d-flex justify-content-center align-items-center">
-                                                        <div class="rounded-2 p-2 bg-weak"><img class="img-fluid d-none d-lg-block" width="25" height="24" src="assets/img/arrow-swap.svg"><img class="img-fluid d-block d-lg-none" width="18" height="18" src="assets/img/dashboard/chevron-right.svg" style="transform: rotate(90deg);"></div>
+                                                        <div class="rounded-2 p-2 bg-weak cursor-pointer" onclick="excreverse()"><img class="img-fluid d-none d-lg-block" width="25" height="24" src="assets/img/arrow-swap.svg"><img class="img-fluid d-block d-lg-none" width="18" height="18" src="assets/img/dashboard/chevron-right.svg" style="transform: rotate(90deg);"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <div class="mb-2"></div>
+                                                    <div class="rounded-3 d-flex justify-content-between align-items-center gap-3 px-3 py-2 bg-weak fw-medium"><span class="my-1">Exchange Rate</span>
+                                                        <div class="d-flex align-items-center"><span id="coin-rate-1">1 BTC</span><span>&nbsp;=&nbsp;</span><span id="coin-rate-2">52,47 ETH</span></div>
                                                     </div>
                                                 </div>
                                                 <form class="d-flex flex-column gap-4">
-                                                    <div class="rounded-3 d-flex justify-content-between align-items-center gap-3 px-3 py-2 bg-weak fw-medium"><span class="my-1">Exchange Rate</span>
-                                                        <div class="d-flex align-items-center"><span>1 BTC</span><span>&nbsp;=&nbsp;</span><span>52,47 ETH</span></div>
-                                                    </div>
-                                                    <div class="d-flex flex-column align-items-stretch"><a class="btn btn-primary" role="button" href="exchange-1.html" data-bs-target="#modal-1" data-bs-toggle="modal">Exchange</a></div>
+                                                    <div class="d-flex flex-column align-items-stretch"><a class="btn btn-primary" role="button" href="exchange-1.html">Exchange</a></div>
                                                 </form>
                                             </div>
                                         </div>
@@ -694,13 +697,13 @@
                 <div><a class="text-decoration-none" href="#"><img src="assets/img/logo-footer.svg"></a></div>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="blogs.html">Blog</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="faq.html">FAQ</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/contact.html">Contact</a></div>
+                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="blogs.html">Blog</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="faq.html">FAQ</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="contact.html">Contact</a></div>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">About</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Supported Currencies</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Press Corner</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Our Partners</a></div>
             </div>
             <div class="col-lg-3">
-                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">API for Partners</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Become an Affiliate</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="#">Brandkit</a></div>
             </div>
         </div>
         <hr class="m-0 bg-soft-200">
@@ -709,16 +712,16 @@
                 <p class="fw-semibold mb-3 fs-6_5 text-heading">Convert</p>
                 <div class="row gy-3 gy-lg-0">
                     <div class="col-6 col-lg-3">
-                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">BTC to USDT</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to BTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">ETH to USDT</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to ETH</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">AVAX to USDT</a></div>
                     </div>
                     <div class="col-6 col-lg-3">
-                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">Solana to USDT</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to Solana</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">BNB to USDT</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to BNB</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to AVAX</a></div>
                     </div>
                     <div class="col-6 col-lg-3">
-                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">TRON to USDT</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to TRON</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">LTC to USDT</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to LTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">AVAX to USDT</a></div>
                     </div>
                     <div class="col-6 col-lg-3">
-                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">DOGE to USDT</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to DOGE</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">Polygon to USDT</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to Polygon</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange-1.html">USDT to AVAX</a></div>
                     </div>
                 </div>
             </div>
@@ -726,16 +729,16 @@
                 <p class="fw-semibold mb-3 fs-6_5 text-heading">Exchange Pairs</p>
                 <div class="row gy-3 gy-lg-0">
                     <div class="col-6 col-lg-3">
-                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">ETH to BTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BTC to ETH</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BTC to LTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">LTC to BTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">ETH to BNB</a></div>
                     </div>
                     <div class="col-6 col-lg-3">
-                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BTC to BNB</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BNB to BTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BTC to AVAX</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">AVAX to BTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BNB to ETH</a></div>
                     </div>
                     <div class="col-6 col-lg-3">
-                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BNB to ETH</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">ATOM to BTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BTC to DOGE</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">DOGE to BTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">ETH to AVAX</a></div>
                     </div>
                     <div class="col-6 col-lg-3">
-                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="dashboard/index.html">Home</a></div>
+                        <div class="d-flex flex-column gap-3"><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BTC to BASE</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BASE to BTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BTC to BCH</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">BCH to BTC</a><a class="fs-6 text-decoration-none text-sub-500 fw-medium" href="exchange.html">AVAX to BNB</a></div>
                     </div>
                 </div>
             </div>
