@@ -66,20 +66,22 @@
                                 <div class="col-12">
                                     <div class="border rounded-4 p-1">
                                         <div class="p-3"><span class="fw-medium fs-7" style="opacity: 0.50;">Send</span>
-                                            <div class="d-flex justify-content-between align-items-center gap-2 pt-2">
+                                            <div class="d-flex justify-content-between gap-2 pt-2">
+                                                <div class="d-flex flex-column align-items-start gap-1">
+                                                    <div class="d-flex align-items-center"><input class="border-0 w-50 text-start fs-2 text-heading fw-semibold" type="number" id="coin-input-1" value="20" oninput="convert()" min="0"><span class="fs-2 fw-semibold rounded-2 px-2 py-1 text-heading" id="coin-badge-1" style="opacity: 0.23;">BTC</span></div><span id="dolar-coin-1" class="fw-medium">$1856105.23</span>
+                                                </div>
                                                 <div>
-                                                    <div class="d-flex align-items-center gap-2"><img class="img-fluid" id="img-coin-1" src="assets/img/coin/Coin%20Logo.svg" width="32" height="32">
+                                                    <div class="rounded-pill d-flex align-items-center p-2 bg-weak"><img class="img-fluid me-2" id="img-coin-1" src="assets/img/coin/Coin%20Logo.svg" width="32" height="32"><select class="me-0 me-lg-2 selectpicker form-control exchange-select fs-6_5 fw-semibold bg-weak home" id="coin-select-1" data-live-search="true">
+                                                            <option value="bitcoin" selected="">BTC</option>
+                                                            <option value="ethereum">ETH</option>
+                                                        </select>
                                                         <div>
-                                                            <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" id="coin-select-1" data-live-search="true">
-                                                                    <option value="bitcoin" selected="">BTC</option>
-                                                                    <option value="ethereum">ETH</option>
-                                                                </select>
-                                                                <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span id="coin-name-1">Bitcoin</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-yellow" id="coin-badge-1">BTC</span></div>
+                                                            <div class="d-flex flex-column justify-content-start align-items-start">
+                                                                <div class="d-none align-items-center gap-2 fs-8 fw-medium"><span id="coin-name-1">Bitcoin</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="text-end d-flex flex-column align-items-end gap-1"><input class="border-0 w-50 text-end fs-2 text-heading fw-semibold" type="number" id="coin-input-1" value="20" oninput="convert()" min="0"><span id="dolar-coin-1" class="fw-medium">$1856105.23</span></div>
                                             </div>
                                         </div>
                                     </div>
@@ -87,20 +89,22 @@
                                 <div class="col-12">
                                     <div class="border rounded-4 p-1">
                                         <div class="p-3"><span class="fw-medium fs-7" style="opacity: 0.50;">Get</span>
-                                            <div class="d-flex justify-content-between align-items-center gap-2 pt-2">
+                                            <div class="d-flex justify-content-between gap-2 pt-2">
+                                                <div class="d-flex flex-column align-items-start gap-1">
+                                                    <div class="d-flex align-items-center"><input class="border-0 w-50 text-start fs-2 text-heading fw-semibold" type="number" id="coin-input-2" readonly="" value="1033.4" min="0"><span class="fs-2 fw-semibold rounded-2 px-2 py-1 text-heading" id="coin-badge-2" style="opacity: 0.23;">ETH</span></div><span id="dolar-coin-2" class="fw-medium">$1796133.90</span>
+                                                </div>
                                                 <div>
-                                                    <div class="d-flex align-items-center gap-2"><img class="img-fluid" id="img-coin-2" src="assets/img/coin/Coin%20Logo-1.svg" width="32" height="32">
+                                                    <div class="rounded-pill d-flex align-items-center p-2 bg-weak"><img class="img-fluid me-2" id="img-coin-2" src="assets/img/coin/Coin%20Logo-1.svg" width="32" height="32"><select class="me-0 me-lg-2 selectpicker form-control exchange-select fs-6_5 fw-semibold bg-weak home" id="coin-select-2" data-live-search="true">
+                                                            <option value="bitcoin">BTC</option>
+                                                            <option value="ethereum" selected="">ETH</option>
+                                                        </select>
                                                         <div>
-                                                            <div class="d-flex flex-column justify-content-start align-items-start"><select class="mb-1 selectpicker form-control exchange-select fs-4 fw-semibold" id="coin-select-2" data-live-search="true">
-                                                                    <option value="bitcoin">BTC</option>
-                                                                    <option value="ethereum" selected="">ETH</option>
-                                                                </select>
-                                                                <div class="d-flex align-items-center gap-2 fs-8 fw-medium"><span id="coin-name-2">Ethereum</span><span class="rounded-2 px-2 py-1 text-heading bg-coin-badge coin-badge-blue" id="coin-badge-2">ETH</span></div>
+                                                            <div class="d-flex flex-column justify-content-start align-items-start">
+                                                                <div class="d-none align-items-center gap-2 fs-8 fw-medium"><span id="coin-name-2">Ethereum</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="text-end d-flex flex-column align-items-end gap-1"><input class="border-0 w-50 text-end fs-2 text-heading fw-semibold" type="number" id="coin-input-2" readonly="" value="1033.4" min="0"><span id="dolar-coin-2" class="fw-medium">$1796133.90</span></div>
                                             </div>
                                         </div>
                                     </div>
