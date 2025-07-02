@@ -22,15 +22,17 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body py-3">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/logo-nav.svg"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-3">
-                <ul class="navbar-nav mx-auto my-3 my-lg-0 gap-3 gap-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="dashboard/exchange.html">Exchange</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="affiliate.html">Affiliate Program</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="blogs.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                </ul><a class="btn btn-primary btn-sm" role="button" href="signIn.html">Login</a>
+        <div class="container"><a class="navbar-brand d-flex d-lg-none align-items-center me-0" href="index.html"><img src="assets/img/logo-nav.svg"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse position-relative d-lg-flex justify-content-lg-between" id="navcol-3"><a class="navbar-brand d-none d-lg-flex align-items-center me-0" href="index.html"><img src="assets/img/logo-nav.svg"></a>
+                <div class="position-absolute w-100" id="nav-center-wrap">
+                    <ul class="navbar-nav gap-3 mx-auto my-3 my-lg-0 gap-lg-0">
+                        <li class="nav-item"><a class="nav-link active px-2 px-lg-3" href="dashboard/exchange.html">Exchange</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 px-lg-3 active" href="affiliate.html">Affiliate Program</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 px-lg-3 active" href="blogs.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 px-lg-3 active" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 px-lg-3 active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div><a class="btn btn-primary btn-sm" role="button" href="signIn.html">Login</a>
             </div>
         </div>
     </nav>
@@ -396,7 +398,7 @@
             <h1 class="display-3 col-lg-8">You Got Questions? We Got Answers!</h1>
         </div>
         <div class="mb-4_5">
-            <div class="accordion border-0 d-flex flex-column gap-4" role="tablist" id="accordion-2">
+            <div class="accordion border-0 d-flex flex-column gap-4 faq-accordion" role="tablist" id="accordion-2">
                 <div class="accordion-item">
                     <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="true" aria-controls="accordion-2 .item-1">What is SmartSwap?</button></h2>
                     <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-2">
@@ -440,7 +442,7 @@
             </div>
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <p class="mb-3 fs-6_5 text-heading fw-medium">Have more question in mind?</p><button class="btn btn-sm btn-outline-soft-200 text-heading" type="button">See all FAQs</button>
+            <p class="mb-3 fs-6_5 text-heading fw-medium">Have more question in mind?</p><a class="btn btn-sm btn-outline-soft-200 text-heading" role="button" href="faq.html">See all FAQs</a>
         </div>
     </section>
     <footer class="d-flex flex-column p-4 p-lg-7 gap-4 gap-lg-7 footer-swap">
