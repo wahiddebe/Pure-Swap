@@ -37,31 +37,41 @@
         </div>
     </nav>
     <section class="min-vh-100 px-4 py-4 px-lg-7 bg-weak">
-        <div class="bg-white p-4 rounded-5">
-            <form class="d-flex flex-column gap-4">
-                <h4>Contact Us</h4>
-                <div class="row gy-4 gx-lg-4 gy-lg-0">
-                    <div class="col-lg-6">
-                        <div><label class="form-label fs-7 text-sub-500">Name</label>
-                            <div class="d-flex align-items-center gap-3"><input class="form-control" type="text" id="name-generate-input" placeholder="Enter your name"><button class="btn btn-primary btn-sm" type="button" onclick="generateName()">Generate</button></div>
+        <div class="d-flex flex-column align-items-stretch align-items-lg-center">
+            <div class="bg-white rounded-5 p-4 col-lg-7">
+                <div class="text-center d-flex flex-column align-items-center mb-2 gap-2"><img src="assets/img/dashboard/3d-render-coupons-isolated-white-background-3d-rendering-coupons-icon-3d%201.svg">
+                    <div>
+                        <h4 class="mb-2">Ticket Created!</h4>
+                        <p class="fw-medium">Your ticket has been created, see below for ticket details.</p>
+                        <p class="fw-medium">Please copy and save the ticket link for further communication.</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column p-4 pt-4 mb-4 rounded-4 bg-weak gap-4">
+                    <div class="d-flex flex-column justify-content-between flex-lg-row gap-4">
+                        <div>
+                            <h1 class="fs-6 mb-2 fw-medium">Ticket ID</h1>
+                            <div class="d-flex align-items-center gap-2"><span class="fs-7">GH6f7uF73g3EE</span><a class="text-decoration-none" href="#"><img src="assets/img/dashboard/copy.svg"></a></div>
+                        </div>
+                        <div>
+                            <h1 class="fs-6 mb-2 fw-medium">Subject</h1>
+                            <div class="d-flex align-items-center gap-2"><span class="fs-7">Order Request</span></div>
+                        </div>
+                        <div>
+                            <h1 class="fs-6 mb-2 fw-medium">Order ID</h1>
+                            <div class="d-flex align-items-center gap-2"><span class="fs-7">TXIDHGAD72GHDA</span><a class="text-decoration-none" href="#"><img src="assets/img/dashboard/copy.svg"></a></div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div><label class="form-label fs-7 text-sub-500">Order ID</label><input class="form-control" type="text" id="order-id" placeholder="Enter order ID you need help with" disabled=""></div>
+                    <div>
+                        <h1 class="fs-6 mb-2 fw-medium">Ticket Link</h1>
+                        <div class="d-flex align-items-center gap-2"><span class="fs-7">https://smartswap.com/contact/ticket/KL82i9oPL91</span><a class="text-decoration-none" href="#"><img src="assets/img/dashboard/copy.svg"></a></div>
+                    </div>
+                    <div>
+                        <h1 class="fs-6 mb-2 fw-medium">Message</h1>
+                        <div class="d-flex align-items-center gap-2"><span class="fs-7">I have issues with my order. I have not received it yet, and it’s already 10 minutes. Can you please check and advise what to do? Thank you!</span></div>
                     </div>
                 </div>
-                <div>
-                    <div><label class="form-label fs-7 text-sub-500">Subject</label><select class="form-select selectpicker" id="subject-id" data-live-search="false" title="Choose a subject for your request" onchange="order(&#39;order-id&#39;,&#39;subject-id&#39;)">
-                            <option value="0">General Inquiry</option>
-                            <option value="1">Order Inquiry</option>
-                            <option value="2">Affiliate Inquiry</option>
-                            <option value="3">PR Inquiry</option>
-                        </select></div>
-                </div>
-                <div>
-                    <div><label class="form-label fs-7 text-sub-500">Your Message</label><textarea class="form-control" placeholder="Enter your message" rows="5"></textarea></div>
-                </div><a class="btn btn-primary" role="button" href="contact-3.html">Create Ticket</a>
-            </form>
+                <div class="text-center d-flex flex-column justify-content-center pt-2 gap-4"><a class="btn btn-primary" role="button" href="contact-2.html">Go to your ticket</a><a class="text-decoration-none d-none" href="contact.html">Back to Contact</a></div>
+            </div>
         </div>
     </section>
     <footer class="d-flex flex-column p-4 p-lg-7 gap-4 gap-lg-7 footer-swap">
